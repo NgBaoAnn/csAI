@@ -23,5 +23,7 @@ Thumbs.db
 *.swp
 *.swo
 
-# Gemini
+# Antigravity & AI
 .gemini/
+.agents/
+.claude/
