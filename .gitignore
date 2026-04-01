@@ -7,21 +7,42 @@ __pycache__/
 dist/
 build/
 .eggs/
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+htmlcov/
+.python-version
 
 # Virtual environments
 venv/
 env/
 .env/
+.venv/
+ENV/
 
 # OS
 .DS_Store
 Thumbs.db
+*.bak
+*.tmp
 
 # IDE
 .vscode/
 .idea/
+.project
+.pydevproject
+.settings/
 *.swp
 *.swo
 
-# Gemini
+# AI Tools & Agents
 .gemini/
+.agents/
+.claude/
+.continue/
+
+# Local Logs and Outputs
+*.log
+*.out
+pdf_out.txt
