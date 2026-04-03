@@ -22,6 +22,7 @@ HIDE_AGENTS = [
     "hide_minimax",
     "hide_montecarlo",
     "hide_potential",
+    "hide_agent"
 ]
 
 # Test configurations - each is a dict of arena.py parameters
@@ -185,10 +186,10 @@ def run_test(seek_id: str, hide_id: str, mode_config: Dict) -> Tuple[str, str, s
 def main():
     """Main test runner."""
     print("="*100)
-    print("COMPREHENSIVE TEST SUITE: Agent 23120189 (Seek) vs All Hide Agents")
+    print("COMPREHENSIVE TEST SUITE: Agent 23120237 (Seek) vs All Hide Agents")
     print("="*100)
     print(f"\nTest Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"Seek Agent: 23120189")
+    print(f"Seek Agent: 23120237")
     print(f"Hide Agents: {', '.join(HIDE_AGENTS)}")
     print(f"Test Modes: {len(MODES)}")
     print(f"Total Tests: {len(HIDE_AGENTS) * len(MODES)}")
@@ -215,7 +216,7 @@ def main():
             current_test += 1
             print(f"\r[{current_test}/{total_tests}] Testing {hide_agent}...", end="", flush=True)
             
-            winner, steps, errors = run_test("23120189", hide_agent, mode)
+            winner, steps, errors = run_test("23120237", hide_agent, mode)
             mode_results[hide_agent] = (winner, steps, errors)
             
             error_str = f"({errors})" if errors else ""
